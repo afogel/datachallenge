@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>COVID Data Challenge</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html"><img src="images/ISQE-logo-icon-white.png" alt="" class='logo'
+						style="width: 36px;" /></a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="challenge.html">Challenge</a></li>
+					<li><a href="datasets_and_papers.html">Datasets and Papers</a></li>
+					<li><a href="worked_example.html">Worked Example</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Challenges</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<div class="misinformation-challenge">
+							<h2 id="misinformation-challenge">COVID and misinformation</h2>
+							<h3>Example Scenario: Asymptomatic and Surface Spread</h3>
+							<p>
+								Among the things the general population and government officials now know is that asymptomatic individuals can transmit the virus, and that hard surfaces (among others) can hold the virus for later transmission. This misunderstanding arguably kept WHO from declaring a pandemic until March. It also led to public officials making blatantly inaccurate statements or engaged in blatantly hazardous conduct (e.g., drinking in crowded bars) into March. In practical terms, actual transmissibility factors, as now understood, means that every person should treat themselves as possibly infected, and should treat every surface as infected, and should treat others as possibly infected.
+							</p>
+							<p>
+								<b>Challenge:</b>​ Create models to track on a weekly basis of news articles or official pronouncements over the evolving understanding of transmissibility. Network nodes would include assurances and warnings about transmissibility.
+							</p>
+							<p>
+								<b>Why this matters:</b>​ Inaccurate understandings of transmissibility arguably dramatically accelerated pandemic spread rates, and remaining misunderstandings will undermine recovery.
+							</p>
+							<p>
+								<b>Alternatively:</b>
+								<ul>
+									<li>What types of misinformation about COVID-19 is being spread by twitter?</li>
+									<li>What are the general themes of the COVID-19 tweets by news media and government/international organizations?</li>
+									<li>How are particular forms of COVID-19 information spread on twitter related to the spread of the virus/number of
+									deaths/government actions?</li>
+								</ul>
+							</p>
+							<table>
+								<tr>
+									<td>Possible qualitative datasets</td>
+									<td>
+										Dataset3: <a href="datasets_and_papers.html#dataset3">English news articles</a><br />
+										Dataset5: <a href="datasets_and_papers.html#dataset5">Automated Twitter accounts</a><br />
+										Dataset6: <a href="datasets_and_papers.html#dataset6"> News media and government/international organization tweets</a><br />
+									</td>
+								</tr>
+								<tr>
+									<td>Possible codes / frameworks</td>
+									<td>
+										Coding scheme for media coverage and the role of the experts <a href="datasets_and_papers.html#papers"> (Vasterman & Ruigrok, 2013)</a>:
+										<br />
+										<br />
+										<em>Alarming:</em> Negative descriptions of the virus; Negative consequences; Negative pragmatic markers (warnings); Negative perlocutionary force markers
+										<br />
+										<br />
+										<em>Reassuring:</em> Positive terms for the virus (mild virus, etc.); Putting risk in perspective of other risks; Positive consequences; Positive pragmatic markers; Positive perlocutionary force markers
+									</td>
+								</tr>
+								<tr>
+									<td>Worked example</td>
+									<td><a href="worked_example.html">Worked example by Golnaz Arastoopour Irgens with Dataset6: News media and
+										government/international organization tweets</a></td>
+								</tr>
+							</table>
+						</div>
+						<hr />
+						<div class="media-reaction-challenge">
+							<h2 id="media-reaction-challenge">COVID and media reaction</h2>
+							<h3>Example Scenario: Confirmed Cases versus Actual Spread</h3>
+							<p>
+								The daily count of new confirmed cases is arguably a function of two major variables: infection spread and testing capacity. It significantly underestimates actual spread. Yet increases in the confirmed cases seem repeatedly taken as indications of spread alone. This is highly misleading, in that it treats confirmed cases as a proxy for spread, badly underestimating spread, and is an inherently incorrect value for the rate of spread.
+							</p>
+							<p>
+								<b>Challenge:</b>​ Create models to track co-occurrence of news articles relaying confirmed case counts with qualifying statements about actual count, about confirmed case counts as low estimate, clarity about actual spread as affected by testing capacity, direct statement or inferencing that confirmed cases is the indicator of spread.
+							</p>
+							<p>
+								<b>Why this matters:</b>​ Public understanding of the nature of spread rates is critical. When confirmed cases are low, public attention is slow. During the current period of early April, a daily increase in the US that is constantly fluctuating in the 25-35K range likely reflects maximum testing capacity rather than actual spread. There are arguably 1.5m or more cases in the US. Let’s say by April 30, the figure is 1.6 million, reflecting mitigation and recovery. Over a three week period, 600,000 confirmed cases are added. The public treats this as increasing spread at a doubling rate rather than a 7% increase. The confirmed case count drastically understates what the general public should be aware of and also overstates.
+							</p>
+							<p>
+								<b>Alternatively:</b>
+								<ul>
+									<li>How does the context of new articles change over time?</li>
+									<li>What sorts of covid-19 fears are most common and change over time?</li>
+									<li>How does the CDC information provided change over time as the virus progressed/spread? How is the public responding to CDC tweets?</li>
+								</ul>
+							</p>
+							<table>
+								<tr>
+									<td>Possible qualitative datasets</td>
+									<td>
+										Dataset3: <a href="datasets_and_papers.html#dataset3">English news articles</a><br />
+										Dataset6: <a href="datasets_and_papers.html#dataset6"> News media and government/international organization tweets</a><br />
+									</td>
+								</tr>
+								<tr>
+									<td>Possible codes / frameworks</td>
+									<td>
+										Panic, testing, economic effects, social effects, recovery, death, medical updates, lies/government cover-ups,
+										statistics
+										<br />
+										<br />
+										From <a href="datasets_and_papers.html#papers"> Jung et al. 2012</a> to code news: Dominant news frame-new evidence; Attribution of responsibility; Uncertainty; Reassurance; Consequence; Action; Bare statistics (no frame)
+										<br />
+										<br />
+										From <a href="datasets_and_papers.html#papers">Lee & Basnyat, 2013</a> to code press releases and news: Basic information; Preventive information; Treatment information; Medical research; Social context; Economic context; Political context; Personal stories (experiences of patients/families); Other (open-ended)
+									</td>
+								</tr>
+								<tr>
+									<td>Worked example</td>
+									<td><a href="worked_example.html">Worked example by Golnaz Arastoopour Irgens with Dataset6: News media and government/international organization tweets</a></td>
+								</tr>
+							</table>
+						</div>
+							<hr />
+							<div class="media-reaction-challenge">
+								<h2 id="media-reaction-challenge">Reaction to COVID containment and mitigation measures</h2>
+								<h3>Example Scenario 1: Face Masks</h3>
+								<p>
+									WHO has repeatedly noted that there is no proven effect of the value of non-medical grade face masks. Yet some countries with notable success in mitigating viral spread practice face masking nearly ubiquitously (e.g., Korea, Japan, Hong Kong, Singapore), though there are exceptions to their success. Different countries are now adopting either strong recommendations or requirements for face masks. It is quite possible that with more accurate understanding of transmissibility and ubiquitous use of face masks in Iran, Europe and US, the pandemic would be much less severe. This scenario does not seek to answer that question, but does seek to model policy recommendations and requirements concerning what is likely to become widespread practice.
+								</p>
+								<p>
+									<b>Challenge:</b>​ Create models to track evolution of discourse on face masks, with nodes representing issues such as concerns of availability for health workers, lack of gold-standard evidence of effectiveness for non-medical grade masks, WHO recommendations, individual country recommendations (e.g., CDC), types of face masks, expected efficacy.
+								</p>
+								<p>
+									<b>Why this matters:</b>​ Public understanding of each individual’s agency and responsibility in both personal protection and protection of others will be a crucial part of the recovery process.
+								</p>
+								<h3>Example Scenario 2: Political Unity</h3>
+								<p>
+									A common expression in times of crisis is that crisis unifies a population. The means by which unity and camaraderie of spirit have evidenced themselves in the pandemic are moving and inspiring. Political leaders in different countries have very different profiles of unity in the crisis.
+								</p>
+								<p>
+									<b>Challenge:</b>​ Create models to track evolution of tone of discourse in different countries, with nodes representing both specific and general factors (policies on closings, ventilator availability, etc.) and something like the collaborative or cooperative valence.
+								</p>
+								<p>
+									<b>Why this matters:</b>​ Despite some successes in people working across partisan divides, leadership in many countries has simply failed to rise above acrimony when collaboration and joint problem-solving is necessary.
+								</p>
+								<p>
+									<b>Alternatively:</b>
+									<ul>
+										<li>What are people’s main concerns with the spread of the virus and how are these concerns related to statistics such as the spread of the virus, number of deaths, number of tests, and governmental actions?</li>
+										<li>How does sentiment (concerning COVID) change over time and in relation to containment measures? What types of messages are connected to which type of sentiment? How do these differ regionally?</li>
+									</ul>
+								</p>
+								<table>
+									<tr>
+										<td>Possible qualitative datasets</td>
+										<td>
+											Dataset1: <a href="datasets_and_papers.html#dataset1"> English online discussions</a><br />
+											Dataset2: <a href="datasets_and_papers.html#dataset2"> English blog posts </a><br />
+											Dataset4: <a href="datasets_and_papers.html#dataset4"> COVID-19 tweets dataset </a><br />
+										</td>
+									</tr>
+									<tr>
+										<td>Possible codes / frameworks</td>
+										<td>
+											Sentiment (pos/neg/neutral), tweet content (perceived threat serious or not serious, hygiene measures necessary or not necessary, adherence or non-adherence to containment measures), date (as discourse segmentation), location (as discourse segmentation or metadata), containment measures (as metadata)
+											<br />
+											<br />
+											From <a href="datasets_and_papers.html#papers">Chew & Eysenbach, 2010</a>: Humour/sarcasm; Relief; Downplayed risk; Concern; Frustration; Misinformation; Question
+											<br />
+											<br />
+											From <a href="datasets_and_papers.html#papers">Signorini, Segre, & Polgreen, 2011</a>: The volume of Hand-Hygiene- and Mask-Related tweets; Travel- and
+											Consumption-Related tweets; Drug-Related tweets and Vaccination tweets over time
+										</td>
+									</tr>
+									<!-- <tr>
+										<td>Worked example</td>
+										<td>Worked example by Golnaz Arastoopour Irgens with Dataset6: News media and government/international
+											organization tweets [LINK]</td>
+									</tr> -->
+								</table>
+							</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<!-- <section>
+										<h3>Accumsan montes viverra</h3>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+									</section>
+									<section>
+										<h4>Sem turpis amet semper</h4>
+										<ul class="alt">
+											<li><a href="#">Dolor pulvinar sed etiam.</a></li>
+											<li><a href="#">Etiam vel lorem sed amet.</a></li>
+											<li><a href="#">Felis enim feugiat viverra.</a></li>
+											<li><a href="#">Dolor pulvinar magna etiam.</a></li>
+										</ul>
+									</section> -->
+						<section>
+							<h4>Connect with us!</h4>
+							<ul class="plain">
+								<li><a href="https://twitter.com/ISQEsociety" target="_blank"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<!-- <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li> -->
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Photos <a href="https://unsplash.co">Unsplash</a>.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
