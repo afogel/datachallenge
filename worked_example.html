@@ -1,150 +1,150 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>COVID Data Challenge</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+  <title>COVID Data Challenge</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a class="logo" href="index.html"><img src="images/ISQE-logo-icon-white.png" alt="" class='logo'
-						style="width: 36px;" /></a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
+  <!-- Header -->
+  <header id="header">
+    <a class="logo" href="index.html"><img src="images/ISQE-logo-icon-white.png" alt="" class='logo'
+      style="width: 36px;" /></a>
+      <nav>
+        <a href="#menu">Menu</a>
+      </nav>
+    </header>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="challenge.html">Challenge</a></li>
-					<li><a href="datasets_and_papers.html">Datasets and Papers</a></li>
-					<li><a href="worked_example.html">Worked Example</a></li>
-				</ul>
-			</nav>
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="challenge.html">Challenge</a></li>
+        <li><a href="datasets_and_papers.html">Datasets and Papers</a></li>
+        <li><a href="worked_example.html">Worked Example</a></li>
+      </ul>
+    </nav>
 
-		<!-- Heading -->
-			<div id="heading" >
-				<h1>Worked Example</h1>
-			</div>
+    <!-- Heading -->
+    <div id="heading" >
+      <h1>Worked Example</h1>
+    </div>
 
-		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<div class="content">
-						<div class="misinformation-challenge">
-							<h2 id="misinformation-challenge"></h2>
-							<p>
-								<b>Dataset6: News media and government/international organization tweets (by Jingyuan Yu)</b>
-								<br />
-								I used a subset of the dataset with U.S. CDC tweets from Feb and March 2020 and coded tweets for 6 different codes:
-							</p>
-							<table>
-								<tr>
-									<th>Code</th>
-									<th>Definition</th>
-									<th>Sample keywords</th>
-								</tr>
-								<tr>
-									<td>People</td>
-									<td>Referring to different populations of people affected by covid-19</td>
-									<td>People, family, community, children, adults</td>
-								</tr>
-								<tr>
-									<td>Positive Action</td>
-									<td>Referring to an action that people can take to cope with or stay safe from covid-19</td>
-									<td>Support, wash, avoid, learn, help</td>
-								</tr>
-								<tr>
-									<td>Spread</td>
-									<td>Referring to the spread of the virus among people</td>
-									<td>Spread, outbreak</td>
-								</tr>
-								<tr>
-									<td>Alarm</td>
-									<td>Using language that conveys an emergency, risk, or sense of alarm</td>
-									<td>Emergency, risk, death, complication, burden</td>
-								</tr>
-								<tr>
-									<td>Global</td>
-									<td>Referring to other countries or global effects of covid-19 beyond the U.S.</td>
-									<td>China, travel, global</td>
-								</tr>
-								<tr>
-									<td>Experts</td>
-									<td>Referring to experts or professionals related to epidemiology</td>
-									<td>Doctors, experts, cdc, recommend</td>
-								</tr>
-							</table>
-							<p>
-								I used ENA to visualize themes in the CDC’s tweets and created a Month, Week, and Date variable. Stanzas (segmentations for how co-occurrences are counted) were by date. Units (individual networks) were accumulated by week and then grouped into red and blue networks by month.
-							</p>
-							<p>
-								The figure below compares the average networks for each month and shows the average centroids. Although the differences are not significant and the effect is not very large, there are differences between February and March in terms of how the CDC tweets were conveying information to the public. In February, tweets focused more on how people could follow expert recommendations regarding the global effects of COVID-19. In March, tweets focused more on the alarming and quick spread of the virus and what positive actions people could take to cope with and reduce spread of COVID-19.
-							</p>
-							<img src="images/image2.png" alt="" class='logo' style="max-width: 45%; display: block; margin-left: auto; margin-right: auto;" />
-							<p>
-								Below are two examples of February and March tweets that match with the interpretation of the networks above.
-							</p>
-							<table>
-								<tr>
-									<td>Example of Feb 21 (week 3) Tweet</td>
-									<td>
-										There are now 2 categories of #COVID19 cases in the US: 1) Cases detected through the domestic public health systems, and 2) cases among people who were repatriated via @StateDept flights from Wuhan (China) &amp; from the Diamond Princess cruise ship (Japan). <a href="https://t.co/1ifchVQ9jm"  target="_blank">https://t.co/1ifchVQ9jm</a>.
-									</td>
-								</tr>
-								<tr>
-									<td>Example of March 17 (week 7) Tweet</td>
-									<td>
-										Older adults appear to be twice as likely to have serious #COVID19 illness. Take everyday precautions to reduce your risk of exposure: Avoid close contact with people who are sick Wash your hands often Avoid touching your face, nose, & eyes <a href="https://t.co/K8q30LYLiE"  target="_blank">https://t.co/K8q30LYLiE</a> <a href="https://t.co/csEUNDYaNf" target="_blank">https://t.co/csEUNDYaNf</a>
-									</td>
-								</tr>
-							</table>
-							<p>
-								The figure below breaks out the networks by each week and is a centroid representation. February includes weeks 1 - 4 and March includes weeks 5 - 9. This visualization shows more detailed trajectories on how the CDC tweets’ focus changed week by week. For example, in week 9 at the end of March, those tweets look more similar to the February tweets that had a global/travel focus. This was because many additional travel advisories went into effect during this week by the U.S. government.
-							</p>
-							<img src="images/image1.png" alt="" class='logo'
-								style="max-width: 45%; display: block; margin-left: auto; margin-right: auto;" />
-							<p>
-								Additional possible analyses include exploring metadata from this dataset such as retweets, favorited/popular tweets, or media included in tweets. Also, April tweets were not included in this analysis and are now available for download and could be added. In addition, this tweet data could be correlated with metadata from other sources such as general tweets with #Covid19 hashtag, containment and mitigation measures, number of infections, etc.
-								<br />
-								<br />
-								<a href="https://drive.google.com/drive/folders/1udpL6CsbLKGV7lIEFxDw1UYi4a8kmMSE"  target="_blank">All csv files and R scripts can be accessed here.</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="inner">
+        <div class="content">
+          <div class="misinformation-challenge">
+            <h2 id="misinformation-challenge"></h2>
+            <p>
+              <b>Dataset6: News media and government/international organization tweets (by Jingyuan Yu)</b>
+              <br />
+              I used a subset of the dataset with U.S. CDC tweets from Feb and March 2020 and coded tweets for 6 different codes:
+            </p>
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Definition</th>
+                <th>Sample keywords</th>
+              </tr>
+              <tr>
+                <td>People</td>
+                <td>Referring to different populations of people affected by covid-19</td>
+                <td>People, family, community, children, adults</td>
+              </tr>
+              <tr>
+                <td>Positive Action</td>
+                <td>Referring to an action that people can take to cope with or stay safe from covid-19</td>
+                <td>Support, wash, avoid, learn, help</td>
+              </tr>
+              <tr>
+                <td>Spread</td>
+                <td>Referring to the spread of the virus among people</td>
+                <td>Spread, outbreak</td>
+              </tr>
+              <tr>
+                <td>Alarm</td>
+                <td>Using language that conveys an emergency, risk, or sense of alarm</td>
+                <td>Emergency, risk, death, complication, burden</td>
+              </tr>
+              <tr>
+                <td>Global</td>
+                <td>Referring to other countries or global effects of covid-19 beyond the U.S.</td>
+                <td>China, travel, global</td>
+              </tr>
+              <tr>
+                <td>Experts</td>
+                <td>Referring to experts or professionals related to epidemiology</td>
+                <td>Doctors, experts, cdc, recommend</td>
+              </tr>
+            </table>
+            <p>
+              I used ENA to visualize themes in the CDC’s tweets and created a Month, Week, and Date variable. Stanzas (segmentations for how co-occurrences are counted) were by date. Units (individual networks) were accumulated by week and then grouped into red and blue networks by month.
+            </p>
+            <p>
+              The figure below compares the average networks for each month and shows the average centroids. Although the differences are not significant and the effect is not very large, there are differences between February and March in terms of how the CDC tweets were conveying information to the public. In February, tweets focused more on how people could follow expert recommendations regarding the global effects of COVID-19. In March, tweets focused more on the alarming and quick spread of the virus and what positive actions people could take to cope with and reduce spread of COVID-19.
+            </p>
+            <img src="images/image2.png" alt="" class='logo' style="max-width: 45%; display: block; margin-left: auto; margin-right: auto;" />
+            <p>
+              Below are two examples of February and March tweets that match with the interpretation of the networks above.
+            </p>
+            <table>
+              <tr>
+                <td>Example of Feb 21 (week 3) Tweet</td>
+                <td>
+                  There are now 2 categories of #COVID19 cases in the US: 1) Cases detected through the domestic public health systems, and 2) cases among people who were repatriated via @StateDept flights from Wuhan (China) &amp; from the Diamond Princess cruise ship (Japan). <a href="https://t.co/1ifchVQ9jm"  target="_blank">https://t.co/1ifchVQ9jm</a>.
+                </td>
+              </tr>
+              <tr>
+                <td>Example of March 17 (week 7) Tweet</td>
+                <td>
+                  Older adults appear to be twice as likely to have serious #COVID19 illness. Take everyday precautions to reduce your risk of exposure: Avoid close contact with people who are sick Wash your hands often Avoid touching your face, nose, & eyes <a href="https://t.co/K8q30LYLiE"  target="_blank">https://t.co/K8q30LYLiE</a> <a href="https://t.co/csEUNDYaNf" target="_blank">https://t.co/csEUNDYaNf</a>
+                </td>
+              </tr>
+            </table>
+            <p>
+              The figure below breaks out the networks by each week and is a centroid representation. February includes weeks 1 - 4 and March includes weeks 5 - 9. This visualization shows more detailed trajectories on how the CDC tweets’ focus changed week by week. For example, in week 9 at the end of March, those tweets look more similar to the February tweets that had a global/travel focus. This was because many additional travel advisories went into effect during this week by the U.S. government.
+            </p>
+            <img src="images/image1.png" alt="" class='logo'
+            style="max-width: 45%; display: block; margin-left: auto; margin-right: auto;" />
+            <p>
+              Additional possible analyses include exploring metadata from this dataset such as retweets, favorited/popular tweets, or media included in tweets. Also, April tweets were not included in this analysis and are now available for download and could be added. In addition, this tweet data could be correlated with metadata from other sources such as general tweets with #Covid19 hashtag, containment and mitigation measures, number of infections, etc.
+              <br />
+              <br />
+              <a href="https://drive.google.com/drive/folders/1udpL6CsbLKGV7lIEFxDw1UYi4a8kmMSE"  target="_blank">All csv files and R scripts can be accessed here.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="content">
-						<section>
-							<h4>Connect with us!</h4>
-							<ul class="plain">
-								<li><a href="https://twitter.com/ISQEsociety" target="_blank"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-							</ul>
-						</section>
-					</div>
-					<div class="copyright">
-						&copy; Photos <a href="https://unsplash.co">Unsplash</a>.
-					</div>
-				</div>
-			</footer>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="content">
+          <section>
+            <h4>Connect with us!</h4>
+            <ul class="plain">
+              <li><a href="https://twitter.com/ISQEsociety" target="_blank"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="copyright">
+          &copy; Photos <a href="https://unsplash.co">Unsplash</a>.
+        </div>
+      </div>
+    </footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+  </body>
+  </html>
