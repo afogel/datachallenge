@@ -39,7 +39,7 @@
       <div class="inner">
         <div class="content">
           <div class="misinformation-challenge">
-            <h2 id="misinformation-challenge"></h2>
+            <h3 id="misinformation-challenge">Worked Example by Golnaz Arastoopour Irgens</h3>
             <p>
               <b>Dataset6: News media and government/international organization tweets (by Jingyuan Yu)</b>
               <br />
@@ -116,6 +116,150 @@
               <br />
               <br />
               <a href="https://drive.google.com/drive/folders/1udpL6CsbLKGV7lIEFxDw1UYi4a8kmMSE"  target="_blank">All csv files and R scripts can be accessed here.</a>
+            </p>
+          </div>
+          <hr>
+          <div class="news-articles">
+            <h3 id="news-articles">Worked Example by Kamila Misiejuk</h3>
+            <p>
+              <b>Worked example by Kamila Misiejuk with Dataset3: English news articles that mention "corona virus" or "coronavirus" or
+              "covid"*</b>
+              <br />
+              <br />
+              <b>*IMPORTANT: After working for a while with this dataset, I noticed that the variable <em>Country</em> and the <em>url</em> do not always match. I proceeded with the analysis using the <em>Country</em> variable, but would recommend to try other methods.*</b>
+              <br />
+              <p>
+                Due to the size of the dataset and the limited computation power, I decided to focus on the titles of English news articles between 2019-12-19 and 2020-02-01 published in Europe. This worked example tries to answer the question: How did the news discourse change in Europe before and after the first COVID case in Europe?
+              </p>
+              <p>
+                To answer this question, I visualized the discourse network for all countries using the ENA webtool. Also, I produced networks for two countries, Italy and Germany. I chose Italy due to their later big COVID outbreak that started in the middle of March 2020. Germany did not have a comparable COVID outbreak as in Italy.
+              </p>
+              <p>
+                The original dataset includes 93,360 English news articles. As part of data-preprocessing:
+                <ol>
+                  <li>The articles were grouped by continent using the country variable available in the dataset, and subsetted by Europe.</li>
+                  <li>The articles were split into two datasets: before and after 25th of January, when the 1st case of COVID in Europe was confirmed. The before dataset includes 4,678 articles, and the after dataset 9,157 articles.</li>
+                </ol>
+              </p>
+              <p>
+                To determine the Codes, I conducted LDA topic modeling on all news article titles and screened through the article titles manually. This inspired the following coding scheme:
+              </p>
+            </p>
+            <table>
+              <tr>
+                <th>Code</th>
+                <th>Definition</th>
+                <th>Sample keywords</th>
+              </tr>
+              <tr>
+                <td>Economy</td>
+                <td>Economical issues connected to COVID</td>
+                <td>Market, Stock, Impact, Oil</td>
+              </tr>
+              <tr>
+                <td>Travel</td>
+                <td>Traveling issues that arises with COVID outbreak</td>
+                <td>Flight, Travel, Airport, Airline</td>
+              </tr>
+              <tr>
+                <td>Spread</td>
+                <td>Global spreading of COVID, rise of the disease</td>
+                <td>Hit, Rise, Spread, World, Outbreak, Global, Rise</td>
+              </tr>
+              <tr>
+                <td>Death toll</td>
+                <td>Mortality rate from COVID</td>
+                <td>Deadly, Toll, Death</td>
+              </tr>
+              <tr>
+                <td>Infection</td>
+                <td>COVID infection risks and testing, and the infection process</td>
+                <td>Patient, Risk, Infect, Test, Hospital, Pneumonia</td>
+              </tr>
+              <tr>
+                <td>Reporting</td>
+                <td>Reporting on or confirmation of COVID cases / outbreaks</td>
+                <td>Confirm, Report, Official</td>
+              </tr>
+              <tr>
+                <td>Previous diseases</td>
+                <td>Connecting COVID to previous diseases and its unknown nature</td>
+                <td>SARS, MARS, Mystery</td>
+              </tr>
+              <tr>
+                <td>Fear</td>
+                <td>Fearful/concerned emotional response to COVID</td>
+                <td>Fear, Concern</td>
+              </tr>
+              <tr>
+                <td>Intervention</td>
+                <td>Intervention measures in response to COVID</td>
+                <td>Quarantine, Evacuate, Emergency, Close</td>
+              </tr>
+            </table>
+            <p>
+              Before conducting ENA analyses in the ENA webtool, I converted the CSV file into Excel files.
+            </p>
+            <p>
+              <b>ANALYSIS (differences among European countries before and after the first COVID case in EU)</b><br/>
+              Units: FirstEU > Country<br />
+              Conversation: Published date (Stanza: Whole conversation)<br />
+              Scale for Edge Weights: 1.4<br />
+              Minimum Edge Weight: 0,3<br />
+            </p>
+            <img src="images/kamila_images/image3.png" alt="" class='logo'
+              style="max-width: 45%; display: block; margin-left: auto; margin-right: auto;" />
+            <p>
+              The ENA network for all European countries shows a significant difference on the x axis in the discourse between the
+              detection of the first COVID case in Europe. The earlier discourse focused more on the connection between the spread of
+              the disease, the infection risk, reporting and previous diseases, such as MARS and SARS. After the 25th of January, the
+              focus moved towards the infection risk and interventions, as well as COVID reporting and interventions. Fear seems to
+              appear more in the later discourse and is connected to interventions.
+            </p>
+            <table>
+              <tr>
+                <th><b>Germany network</b> (blue: before | red: after)</th>
+                <th><b>Italy network</b> (blue: before | red: after)</th>
+              </tr>
+              <tr>
+                <td><img src="images/kamila_images/image4.png" alt="" class='logo'
+                  style="max-width: 75%; display: block; margin-left: auto; margin-right: auto;" /></td>
+                <td><img src="images/kamila_images/image5.png" alt="" class='logo'
+                  style="max-width: 75%; display: block; margin-left: auto; margin-right: auto;" /></td>
+              </tr>
+            </table>
+            <p>
+              When we take a look at Germany’s network before the COVID outbreak, there is a strong focus on previous diseases, their death toll, reporting, infection risks and spread. The first COVID case in France changed the discourse towards interventions that are connected to COVID infection risk, spread of the virus, travel, and the death toll. Fear seems to be stronger in the later discourse, and is connected to intervention and economy.
+            </p>
+            <p>
+              In comparison, in Italy's network both the COVID spread and infection risk are strongly connected to travel and economy. After the first European COVID case, the connections in the network are stronger between COVID spread, reporting and interventions. In the after network, fear is connected to reporting, infection risk, and COVID spread. Interestingly, connections between previous diseases, COVID spread and death toll are stronger in the discourse after the 25th of January.
+            </p>
+            <table>
+              <tr>
+                <th><b>Before network</b> (orange: Italy | blue: Germany)</th>
+                <th><b>After network</b> (red: Germany | green: Italy)</th>
+              </tr>
+              <tr>
+                <td><img src="images/kamila_images/image1.png" alt="" class='logo'
+                    style="max-width: 75%; display: block; margin-left: auto; margin-right: auto;" /></td>
+                <td><img src="images/kamila_images/image2.png" alt="" class='logo'
+                    style="max-width: 75%; display: block; margin-left: auto; margin-right: auto;" /></td>
+              </tr>
+            </table>
+            <p>
+              The obvious limitation of Dataset3 is that the collected articles are only in English, which might not reflect the sentiments expressed in other languages.
+            </p>
+            <p>
+              At the same time, there are many promising analysis directions possible with this dataset, e.g.:
+              <ul>
+                <li>An exploration of differences in the news discourse over a longer time period, which can be combined with COVID-related mitigations</li>
+                <li>A focused analysis of certain countries / regions - e.g., countries with high mortality rate and its influence on the changes in discourse in neighboring countries / regions</li>
+                <li>It would be interesting to perform an analysis with a more sophisticated coding of the kinds of news presented, e.g., expert opinion, warning, statistics, recommendations.</li>
+              </ul>
+              <br />
+              <br />
+              <a href="https://drive.google.com/drive/folders/1piTdxkrkZmPu1cRdeSW-ZwkFqpfDxkhF" target="_blank">All csv files and
+                R scripts can be accessed here.</a>
             </p>
           </div>
         </div>
